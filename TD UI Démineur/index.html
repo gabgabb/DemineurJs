@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Démineur 💣 !</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="./style.css"> 
+    <script src="./index.js" type="module"></script>
+
+  </head>
+  <body oncontextmenu="return false">
+    <div id="demineur" >
+      
+      <h1 style="color: black;"> 
+        Démineur 
+      </h1>
+      <li v-for="(row,index1) in grille" >
+        <span v-for ="(cell, index2) in row">
+          <button class="button" v-on:mouseover="isOver()" v-on:click.left="clique(index1,index2)" v-on:click.right="flaguer(index1,index2)"> {{cell}} </button>
+        </span>
+      </li>
+    </div>
+      <h2 id="affichage">
+      </h2>
+    </h3>
+    <tr>
+        <button class="rejouer" onclick="document.location.reload(false)"> Rejouez ! </button>
+    </tr>
+    </h3>
+    </body>
+</html>

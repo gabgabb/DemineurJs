@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Press Start 2P', cursive;
+    text-align:center; 
+}
+
+li { 
+    list-style-type: none; 
+}
+
+.button {
+    font-size: x-large;
+    height: 100px; 
+    width: 100px; 
+    background-color: #81767d; 
+    margin : 1px;
+    vertical-align: top;
+    }
+
+.rejouer{
+    background-color: #53c8dd; 
+    height: 50px; 
+    width: 160px; 
+    font-size: medium;
+    border-style: double;
+    position: relative;
+    
+}
